@@ -1,0 +1,140 @@
+{
+	"info": {
+		"_postman_id": "8554c4b8-f4dd-4a56-8534-5842c1b86db7",
+		"name": "user-crud",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6752452"
+	},
+	"item": [
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"Mukesh Kumar Soni\",\r\n    \"age\":30,\r\n    \"hobbies\":[\"dance\",\"coding\",\"running\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/users/be24ae6e-4558-43fd-88b4-15516736d6ac",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"users",
+						"be24ae6e-4558-43fd-88b4-15516736d6ac"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User by id",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"Mukesh Kumar Soni\",\r\n    \"age\":32,\r\n    \"hobbies\":[\"coding\",\"running\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/users/be24ae6e-4558-43fd-88b4-15516736d6ac",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"users",
+						"be24ae6e-4558-43fd-88b4-15516736d6ac"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"Mukesh Kumar Soni update\",\r\n    \"age\":30,\r\n    \"hobbies\":[\"dance\",\"coding\",\"running\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4002/api/users/1176b160-9d2e-436d-9911-f7d7c72a1470",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4002",
+					"path": [
+						"api",
+						"users",
+						"1176b160-9d2e-436d-9911-f7d7c72a1470"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

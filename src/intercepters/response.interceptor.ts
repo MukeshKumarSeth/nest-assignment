@@ -3,7 +3,7 @@
 import { Injectable, NestInterceptor, ExecutionContext, CallHandler } from '@nestjs/common';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { ResponseMessageKey } from 'src/utils/response.decorator';
+import { ResponseMessageKey } from '../utils/response.decorator';
 import "reflect-metadata";
 
 @Injectable()
